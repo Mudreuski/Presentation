@@ -29,8 +29,8 @@
 				</section>
 				<section>
 					<section>
-						<h2>class</h2>
-						<p class="fragment" data-fragment-index="0"><span class="-highlight">Class</span> 
+						<h2 style="color:rgb(23, 141, 238);">class</h2>
+						<p class="fragment" data-fragment-index="0"><span style="color:rgb(23, 141, 238);">Class</span> 
  is a convenient “syntactic sugar” for specifying the constructor along with the prototype.</p>
 						<pre class="fragment" data-fragment-index="1"><code>
 class Name [extends Parent]  {
@@ -40,7 +40,7 @@ class Name [extends Parent]  {
 </code></pre>
 					</section>
 					<section>
-						<h2>class</h2>
+						<h2 style="color:rgb(23, 141, 238);">class</h2>
 						<pre class="fragment" data-fragment-index="0"><code>class User {
 
   constructor(name) {
@@ -61,8 +61,8 @@ user.sayHi(); // Henadzi
 				</section>
 				<section>
 					<section>
-						<h2>object</h2>
-						<p class="fragment" data-fragment-index="0"><span class="-highlight">Objects</span> 
+						<h2  style="color:rgb(23, 141, 238);">object</h2>
+						<p class="fragment" data-fragment-index="0"><span style="color:rgb(23, 141, 238);">Objects</span> 
 							are pairs of unique keys with corresponding values ​​— such pairs are called properties.
 						</p>
 						<pre class="fragment" data-fragment-index="1"><code>
@@ -76,7 +76,7 @@ const user = {
 				</section>
 				<section>
 					<section>
-						<h2>Classes in JS functions</h2>
+						<h2>Classes in JS <span style="color:rgb(23, 141, 238);">functions</span></h2>
 						<pre><code>
 function Animals(name) {
     this.name = name;
@@ -85,7 +85,7 @@ function Animals(name) {
 						<img data-src="img/class-0.png" style="width: 50%;" />
 					</section>
 					<section>
-						<h2>Classes in JS functions</h2>
+						<h2>Classes in JS <span style="color:rgb(23, 141, 238);">functions</span></h2>
 						<pre><code>
 Animals.prototype.run = function(speed) {
     console.log(this.name + ': "' + speed + '"');
@@ -94,22 +94,22 @@ Animals.prototype.run = function(speed) {
 						<img data-src="img/class-1.png" style="width: 50%;" />
 					</section>
 					<section>
-						<h2>Classes in JS functions</h2>
+						<h2>Classes in JS <span style="color:rgb(23, 141, 238);">functions</span></h2>
 						<pre><code>let bear = new Animals('Bear');</code></pre>
 						<img data-src="img/class-2.png" style="width: 50%;" />
 					</section>
 				</section>
 				<section>
-                        <h2>Inheritance in JS</h2>
+                        <h2><span style="color:rgb(23, 141, 238);">Inheritance</span> in JS</h2>
                         <ul>
-                            <li><span class="-highlight">Crockford</span> way</li>
-                            <li>ES5 way</li>
-                            <li>ES2015 way</li>
+                            <li><span style="color:rgb(23, 141, 238);">Crockford</span> way</li>
+                            <li><span style="color:rgb(23, 141, 238);">ES5</span> way</li>
+                            <li><span style="color:rgb(23, 141, 238);">ES2015</span> way</li>
                         </ul>
 				</section>
 				<section>
 					<section>
-                    	<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+                    	<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
                     	<pre><code>
 function extend(Child, Parent) {
     Child.prototype = Object.create(Parent.prototype);
@@ -119,7 +119,7 @@ function extend(Child, Parent) {
 						</code></pre>
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre class="minimal-code"><code>
 function extend(Child, Parent) {
     Child.prototype = Object.create(Parent.prototype);
@@ -130,63 +130,46 @@ function extend(Child, Parent) {
 						<img data-src="img/class-2.png" style="width: 50%;" />
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-function LegoBatMan(name) {
-    LegoBatMan.superclass.constructor.call(this, name);
+function AnimalsCat(name) {
+    AnimalscCat.superclass.constructor.call(this, name);
 }
 						</code></pre>	
 						<img data-src="img/inheritance-1.png" style="width: 70%;" />
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(LegoBatMan, LegoMan);
+extend(AnimalsCat, Animals);
 						</code></pre>	
 						<img data-src="img/inheritance-1-1.png" style="width: 70%;" />
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(LegoBatMan, LegoMan);
+extend(AnimalsCat, Animals);
 						</code></pre>	
 						<img data-src="img/inheritance-1-5.png" style="width: 70%;" />
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(LegoBatMan, LegoMan);
+extend(AnimalsCat, Animals);
 						</code></pre>	
 						<img data-src="img/inheritance-2.png" style="width: 70%;" />
 					</section>
 					<section>
-						<h2>Inheritance <span class="-highlight">ES5 way</span></h2>
+						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(LegoBatMan, LegoMan);
+extend(AnimalsCat, Animals);
 						</code></pre>	
 						<img data-src="img/inheritance-3.png" style="width: 70%;" />
 					</section>
 				</section>
 				<section>
-					<section>
-						<img data-src="https://s3-eu-west-1.amazonaws.com/files.surfory.com/uploads/2016/2/25/56c75f91bd04707a268b456a/56ce977dbd047044068b4568.gif"></img>
-					</section>
-					<section>
-						<h2>Classes in JS</h2>
-						<ul>
-							<li class="fragment">object literals (not really classes)</li>
-							<li class="fragment">functions (more like classes but still not)</li>
-							<li class="fragment"><span class="-highlight">ES2015</span> classes</li>
-						</ul>
-					</section>
-					<section>
-					Slide 14
-					</section>
-					<section>
-					Slide 15
-					</section>
+					<h2>Conclusion</h2>
 				</section>
-				<section>Slide 2</section>
 			</div>
 		</div>
 
