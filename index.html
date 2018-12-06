@@ -143,26 +143,26 @@ function AnimalsCat(name) {
 						<pre><code>
 extend(AnimalsCat, Animals);
 						</code></pre>	
+						<pre><code>
+Child.prototype = Object.create(Parent.prototype);
+						</code></pre>
 						<img data-src="img/inheritance-1-1.png" style="width: 70%;" />
 					</section>
 					<section>
 						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
-						<pre><code>
-extend(AnimalsCat, Animals);
-						</code></pre>	
 						<img data-src="img/inheritance-1-5.png" style="width: 70%;" />
 					</section>
 					<section>
 						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(AnimalsCat, Animals);
+Child.prototype.constructor = Child;
 						</code></pre>	
 						<img data-src="img/inheritance-2.png" style="width: 70%;" />
 					</section>
 					<section>
 						<h2>Inheritance <span style="color:rgb(23, 141, 238);">ES5 way</span></h2>
 						<pre><code>
-extend(AnimalsCat, Animals);
+Child.superclass = Parent.prototype;
 						</code></pre>	
 						<img data-src="img/inheritance-3.png" style="width: 70%;" />
 					</section>
